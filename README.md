@@ -1,6 +1,6 @@
 # RealTimeCompute
 整合 Hbase ElasticSearch SparkStream Kafka，实现一个实时计算的框架
 
-数据从Kafka通过不同的Topic发送到SparkStreaming进行处理，可以进行实时的查询ES来对数据进行分析处理，并将处理结果发送回Kafka，存储进HBase或ES
+数据从Kafka通过不同的Topic发送到SparkStreaming进行处理，可以进行实时的查询ES来对数据进行分析处理，并将处理结果发送回Kafka，存储进HBase或ES，还可以通过协处理器对HBase建索引。
 
 通过实现Core接口来进行自定义的数据处理流程
